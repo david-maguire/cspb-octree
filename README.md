@@ -14,7 +14,6 @@ there are 3D points stored within it's space. In this way, we can effectively mo
 sparse point data without needing to model the entire space.
 
 ## Features
-List the main features of your project:
 - Core data structure operations:
     Insert points
     Query (contains)
@@ -118,7 +117,7 @@ You are able to check parameters like depth, or for the inclusion of points
 at specific coordinates, as well as add, remove, and modify the parameters.
 
 ![Query example][query]
-[query]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/query.jpg?raw=true "Query Example"
+[query]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/query.jpg "Query Example"
 
 Additionally, you are able to read and write .OBJ Files. At the moment, these
 are fairly limited, designed to import the location of cubes, and export each node
@@ -130,14 +129,14 @@ them into a scene! For example, these cubes are the items that were exported in 
 obj_import_test.obj file:
 
 ![obj_import_test.obj][importTest]
-[importTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/import_test.jpg?raw=true "Import Test File"
+[importTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/import_test.jpg "Import Test File"
 
 
 And here is the subsequent export of the octree (depth 3), showing the increased density at the
 locations of the nodes:
 
 ![export_test.obj][exportTest]
-[exportTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/export_test.jpg?raw=true "Exported octree"
+[exportTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/export_test.jpg "Exported octree"
 
 
 Adding and removing points is quite easy, and it is simple to check on the points contained in
