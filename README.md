@@ -94,7 +94,7 @@ I was not able to get cMake working, so we'll have to run this the old fashioned
 ```bash
 git clone https://github.com/david-maguire/cspb-octree.git
 cd cspb-octree
-g++ -std=c++17 src/*.cpp -o ../bin/octree
+g++ oct.cpp main.cpp file_functions.cpp -o ../bin/octree
 ../bin/octree
 ```
 ## Usage
