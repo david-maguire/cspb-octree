@@ -73,12 +73,22 @@ The root is itself a node with eight children, same as all the rest.
 I have not written a very efficient structure...
 
 ## File Structure
-Explain the folder and file organization.
 ```
+/data # Data files
+    readme images
+    obj_import_test.obj
+    export_test.obj
 /src # Source code
+    Main.cpp - Demo application
+    oct.cpp - Primary data structure class and functions
+    file_functions.cpp - Reading and writing of OBJ files
 /include # Header files
+    main.h
+    oct.h
+    file_functions.h
 /tests # Test cases
-main.cpp # Demo application
+    depth_tests.cpp
+    test.cpp
 ```
 ## Installation / Setup
 I was not able to get cMake working, so we'll have to run this the old fashioned way:
@@ -107,7 +117,8 @@ The application allows you to manipulate an octree that starts out empty.
 You are able to check parameters like depth, or for the inclusion of points
 at specific coordinates, as well as add, remove, and modify the parameters.
 
-![Example Image] (../data/readme_images/query.jpg)
+![Query example][query]
+[query]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/query.jpg?raw=true "Query Example"
 
 Additionally, you are able to read and write .OBJ Files. At the moment, these
 are fairly limited, designed to import the location of cubes, and export each node
@@ -118,12 +129,16 @@ If you have access to Blender, these .OBJ files can be checked simply by importi
 them into a scene! For example, these cubes are the items that were exported in the
 obj_import_test.obj file:
 
-![Import screenshot] (../data/readme_images/import_test.jpg)
+![obj_import_test.obj][importTest]
+[importTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/import_test.jpg?raw=true "Import Test File"
+
 
 And here is the subsequent export of the octree (depth 3), showing the increased density at the
 locations of the nodes:
 
-![Export Screenshot] (../data/readme_images/import_test.jpg)
+![export_test.obj][exportTest]
+[exportTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/export_test.jpg?raw=true "Exported octree"
+
 
 Adding and removing points is quite easy, and it is simple to check on the points contained in
 the tree. Play around with editing the obj_import_test before exporting again, and see how the
@@ -160,6 +175,8 @@ With that in mind, things for the future are:
 4) Write a pathfinding algorithm!
 5) A video walkthrough would be nice, just ran out of time
 6) Increase useability by using vertex IDs for queries and operations
+7) Clean up and standardize commenting and format, hard to keep track of
+consistency over so much code
 
 ### License
-State the license for your project (e.g., MIT License).
+MIT License
