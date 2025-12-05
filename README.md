@@ -116,7 +116,6 @@ The application allows you to manipulate an octree that starts out empty.
 You are able to check parameters like depth, or for the inclusion of points
 at specific coordinates, as well as add, remove, and modify the parameters.
 
-![Query example][query]
 [query]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/query.jpg "Query Example"
 
 Additionally, you are able to read and write .OBJ Files. At the moment, these
@@ -128,14 +127,12 @@ If you have access to Blender, these .OBJ files can be checked simply by importi
 them into a scene! For example, these cubes are the items that were exported in the
 obj_import_test.obj file:
 
-![obj_import_test.obj][importTest]
 [importTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/import_test.jpg "Import Test File"
 
 
 And here is the subsequent export of the octree (depth 3), showing the increased density at the
 locations of the nodes:
 
-![export_test.obj][exportTest]
 [exportTest]: https://github.com/david-maguire/cspb-octree/blob/main/data/readme_images/export_test.jpg "Exported octree"
 
 
