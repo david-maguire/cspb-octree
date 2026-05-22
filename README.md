@@ -69,7 +69,7 @@ The root is itself a node with eight children, same as all the rest.
 | Count     | O(N) | O(N)  |
 | Subdivide | O(1) | O(1)  |
 
-I have not written a very efficient structure...
+As written, the structure is not particularly efficient, but it is functional.
 
 ## File Structure
 ```
@@ -98,7 +98,7 @@ g++ oct.cpp main.cpp file_functions.cpp -o ../bin/octree
 ../bin/octree
 ```
 ## Usage
-When prompted at the menu, enter a number corresponding tothe action you'd like to take.
+When prompted at the menu, enter a number corresponding to the action you'd like to take.
 For example, here the user has typed in "1" to indicate they wish to check for
 a point in the tree. When prompted, they have typed "1 4 5," and the program has
 returned text indicating that it was not found.
@@ -127,13 +127,13 @@ If you have access to Blender, these .OBJ files can be checked simply by importi
 them into a scene! For example, these cubes are the items that were exported in the
 obj_import_test.obj file:
 
-![importTest](data/readme_images/export_test.jpg)
+![exportTest](data/readme_images/import_test.jpg)
 
 
 And here is the subsequent export of the octree (depth 3), showing the increased density at the
 locations of the nodes:
 
-![exportTest](data/readme_images/import_test.jpg)
+![importTest](data/readme_images/export_test.jpg)
 
 
 Adding and removing points is quite easy, and it is simple to check on the points contained in
