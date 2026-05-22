@@ -14,25 +14,25 @@ there are 3D points stored within it's space. In this way, we can effectively mo
 sparse point data without needing to model the entire space.
 
 ## Features
-- Core data structure operations:
-    Insert points
-    Query (contains)
-    Remove points
-    Reorganize points/fix nodes
-    ResizeTree/Nodes
-    Set new octree depth
-    Count points
-    Subdivide nodes
+Core data structure operations:  
+    - Insert points  
+    - Query (contains)  
+    - Remove points  
+    - Reorganize points/fix nodes  
+    - ResizeTree/Nodes  
+    - Set new octree depth  
+    - Count points  
+    - Subdivide nodes
     
-- Features of the demo application
-    Octree manipulation
-        Add and remove points by coordinate
-        Check for existing points
-        List existing points
-        Count existing points
-        Get and set tree depth
-        Import points (.OBJ)
-        Export points and node representations (.OBJ)
+## Features of the demo application
+Octree manipulation:  
+    - Add and remove points by coordinate  
+    - Check for existing points  
+    - List existing points  
+    - Count existing points  
+    - Get and set tree depth  
+    - Import points (.OBJ)  
+    - Export points and node representations (.OBJ)
 
 ## How the Data Structure Works
 The data structure, as mentioned above, is a system of nodes with eight children.
